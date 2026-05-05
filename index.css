@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: 14px 34px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg,#35ec69,#f015d7);
+  color: #17a067;
+  box-shadow: 0 0 20px rgba(231, 81, 173, 0.4);
+}
+
+.btn-outline {
+  border: 2px solid #a855f7;
+  color: #c084fc;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(168,85,247,.9);
+}
+
+/* Project Cards */
+.project-card {
+  background: #1e1e1e;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: .3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.7);
+}
+
+.project-link {
+  color: #98a004;
+  transition: .3s;
+}
+.project-link:hover {
+  color: #7c3aed;
+  transform: translateX(5px);
+}
+
+/* Skills */
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #111;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: all .25s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+/* Floating Dock */
+.floating-dock {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(20,20,30,0.75);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.dock-item {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #c084fc;
+  transition: all 0.3s ease;
+}
+
+.dock-item:hover {
+  background: linear-gradient(90deg,#a855f7,#3b82f6);
+  color: white;
+  transform: translateY(-4px) scale(1.08);
+}
